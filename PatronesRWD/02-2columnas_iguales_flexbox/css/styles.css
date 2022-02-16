@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    width: 100%;
 }
 
 *,
@@ -12,6 +13,10 @@ html {
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.6rem;
+    background-image: linear-gradient(to top, #4ef398 0%, #fdfa9d 100%);
+    background: cover 100% no-repeat;
+    margin-bottom: 20%;
+    
 }
 
 img {
@@ -30,12 +35,23 @@ h1 {
 
 .entrada-blog a {
     display: inline-block;
-    background-color: #2196F3;
+    background-color: #2195f3c1;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px 1px #000;
+    margin-bottom: 10px;
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px){
+    .dos-columnas{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+}
